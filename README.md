@@ -5,7 +5,7 @@
 | --- | --- |
 | **Platform** | ![Chrome Web Store](https://img.shields.io/badge/Chrome-Web_Store-4285F4?style=flat&logo=googlechrome&logoColor=white) ![Manifest V3](https://img.shields.io/badge/Manifest-V3-brightgreen?style=flat) |
 | **Package**  | ![Version](https://img.shields.io/badge/Version-1.1-007ec6?style=flat) ![Downloads](https://img.shields.io/badge/downloads-12k+-brightgreen?style=flat) |
-| **Meta**     | ![License](https://img.shields.io/badge/license-MIT-purple?style=flat) ![Style](https://img.shields.io/badge/design-Glassmorphism-ec4899?style=flat) ![JS](https://img.shields.io/badge/code-Vanilla_JS-f1e05a?style=flat) |
+| **Meta**     | ![License](https://img.shields.io/badge/License-AGPL_v3-purple?style=flat) ![Style](https://img.shields.io/badge/design-Glassmorphism-ec4899?style=flat) ![JS](https://img.shields.io/badge/code-Vanilla_JS-f1e05a?style=flat) |
 
 
 **A highly premium glassmorphism Dark Mode and Eye Protect control center for Google Chrome.**
