@@ -192,6 +192,22 @@ function safeSaveState(data) {
       }
     });
 
+    // Close panel when clicking outside of it (uses Capture phase to bypass website event blockers)
+    document.addEventListener('click', (e) => {
+      if (panel.style.display === 'none' || panel.classList.contains('hidden')) return;
+      
+      // If the click path contains our extension root, they clicked inside the panel
+      const clickedInside = e.composedPath && e.composedPath().some(el => el.id === 'liquid-glass-extension-root');
+      
+      if (!clickedInside) {
+        panel.classList.add('hidden');
+        panel.style.transform = 'translateY(-20px) scale(0.95)';
+        panel.style.transition = 'opacity var(--transition-spring), transform var(--transition-spring)';
+        setTimeout(() => { if (panel.classList.contains('hidden')) panel.style.display = 'none'; }, 600);
+        safeSaveState({ panel_open: false });
+      }
+    }, true);
+
   });
 })();
 
